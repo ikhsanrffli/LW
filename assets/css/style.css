@@ -584,7 +584,7 @@ p {
   background: -o-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
   background: linear-gradient(to right, #43cae9 0%, #38f9d7 100%); */
   background:black;
-  padding: 10px 0;
+  padding: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -599,13 +599,13 @@ p {
     max-width: 150px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-area {
-      padding: 10px 0; } }
+      padding: 0px; } }
   @media (max-width: 767px) {
     .navbar-area {
-      padding: 10px 0; } }
+      padding: 10px; } }
   .navbar-area .navbar {
     position: relative;
-    padding: 0; }
+    padding: 0px; }
     .navbar-area .navbar .navbar-toggler .toggler-icon {
       width: 30px;
       height: 2px;
@@ -671,7 +671,7 @@ p {
         .navbar-area .navbar .navbar-nav .nav-item a {
           font-size: 16px;
           line-height: 24px;
-          font-weight: 700;
+          font-weight: 300;
           padding: 11px 16px;
           color: #fff;
           text-transform: uppercase;
@@ -977,10 +977,7 @@ p {
       background-color: #fff; }
   .navbar-area.sticky {
     position: fixed;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    padding: 5px 0; }
+    padding: 0; }
 
 .sidebar-right {
   position: fixed;
@@ -1086,7 +1083,7 @@ p {
 
 /*===== SLIDER ONE =====*/
 .slider-area {
-  padding-top: 94px; }
+  padding-top: 0px; }
   .slider-area .bd-example .carousel .carousel-inner {
     background-color: #38f9d7; }
     .slider-area .bd-example .carousel .carousel-inner .carousel-item {
@@ -1329,13 +1326,23 @@ p {
  }
   @media (max-width: 767px) {
     .single-about .about-icon img {
-      width: 100px; } }
+      width: 100%;
+      padding :20px; 
+      
+    }
+    .about-content .about-title p{
+      color: blue;
+    }
+  
+  }
 .single-about .about-content {
   padding-left: 30px; }
   @media (max-width: 767px) {
     .single-about .about-content {
       padding-left: 0;
-      padding-top: 30px; } }
+      padding-top: 30px;
+      text-align: center;
+     } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .single-about .about-content {
       padding-left: 30px;
@@ -1344,7 +1351,10 @@ p {
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
-    color: #121212; }
+    color: #121212;
+    
+   }
+
   .single-about .about-content .text {
     font-size: 16px;
     color: #121212;
